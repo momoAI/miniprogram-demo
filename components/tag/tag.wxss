@@ -1,0 +1,7 @@
+.taglabel {
+  background-color: purple;
+  font-size: 40rpx;
+  border-radius: 5rpx;
+  border-width: 1rpx;
+  border-color: #56b9e7;
+}

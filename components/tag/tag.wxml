@@ -1,0 +1,19 @@
+<!-- 自定义组件tag -->
+<view class="taglabel">
+  {{ tagName }}
+
+  <!-- 插槽 -->
+  <slot></slot>
+  
+  <!-- 使用外部class -->
+  <!-- <text class="external">
+    {{ innerData }}
+  </text> -->
+
+  <!-- 组件使用页面class -->
+  <text class="~userinfo-avatar">
+    {{ innerData }}
+  </text>
+
+</view>
+

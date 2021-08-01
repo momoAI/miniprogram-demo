@@ -5,7 +5,9 @@
       <view class="userinfo-avatar" bindtap="bindViewTap">
         <open-data type="userAvatarUrl"></open-data>
       </view>
-      <open-data type="userNickName"></open-data>
+
+      <text class="userinfo-nickname">userInfo.nickName</text>
+      <!-- <open-data type="userNickName"></open-data> -->
     </block>
     <block wx:elif="{{!hasUserInfo}}">
       <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
@@ -20,4 +22,7 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <tag external="external" tagName="{{tagName}}">
+    <view>从外部插入 slot</view>
+  </tag>
 </view>

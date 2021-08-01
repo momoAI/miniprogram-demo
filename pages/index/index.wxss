@@ -4,16 +4,27 @@
   flex-direction: column;
   align-items: center;
   color: #aaa;
+  background-color: orange;
 }
 
 .userinfo-avatar {
   overflow: hidden;
-  width: 128rpx;
+  width: 64px;
   height: 128rpx;
   margin: 20rpx;
   border-radius: 50%;
+  background-color: blue;
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 200rpx;
+}
+
+.userinfo-nickname {
+  background-color: rgb(59, 153, 51);
+}
+
+.external {
+  background-color: red;
+  font-size: 50rpx;
 }
