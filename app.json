@@ -12,6 +12,13 @@
     "enablePullDownRefresh":true
   },
   "style": "v2",
+  "plugins": {
+    
+  },
+  "darkmode": true,
+  "networkTimeout": {
+
+  },
   "sitemapLocation": "sitemap.json",
   "debug": true,
   "usingComponents": {},

@@ -2,6 +2,10 @@ Component({
   lifetimes: {
     created: function() {
       console.log('组件被创建')
+      console.debug("debug....")
+      console.info("info...")
+      console.error("custom error ..")
+      console.warn("custom warn ...")
     },
     attached: function() {
       console.log('组件初始化完毕')
@@ -55,11 +59,21 @@ Component({
     num1: 0,
     num2: 0,
     sum: 0,
+    show: false,
+    array: [1,2,3],
+    msgItem: {
+      index: 0,
+      msg: "test"
+    },
     _pureData: ''
   },
   methods: {
     getInnerTag: function(param) {
       console.log(param)
+      console.debug("debug....")
+      console.info("info...")
+      console.error("custom error ..")
+      console.warn("custom warn ...")
     }
   },
   externalClasses: ['external'],
