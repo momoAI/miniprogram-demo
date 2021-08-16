@@ -20,9 +20,11 @@
     <view>{{itemname}}</view>
   </block>
 
-  <import src="../../pages/index/index.wxml"/>
+  <import src="../../pages/index/index.wxml" />
   <template is="msgItem" data="{{...msgItem}}"></template>
 
+  <wxs src="/components/common.wxs" module="com"></wxs>
+  <view>{{com.foo}}</view>
 
   <!-- <template name="odd">
     <view> odd </view>
@@ -34,6 +36,4 @@
   <block wx:for="{{[1, 2, 3, 4, 5]}}">
     <template is="{{item % 2 == 0 ? 'even' : 'odd'}}" />
   </block> -->
-
-
 </view>

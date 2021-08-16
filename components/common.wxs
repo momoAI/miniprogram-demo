@@ -1,0 +1,14 @@
+var foo = "'hello world' from comm.wxs";
+var bar = function(d) {
+  return d;
+}
+
+var a = function() {
+  console.log('xxxaaaa' + arguments.length)
+  return "hehhe"
+}
+
+module.exports = {
+  foo: foo,
+  bar: bar
+};

@@ -29,5 +29,5 @@
   <template name="msgItem">
     <view>{{index}}={{msg}}</view>
   </template>
-
+  
 </view>
