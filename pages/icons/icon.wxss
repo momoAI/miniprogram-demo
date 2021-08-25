@@ -20,3 +20,17 @@
   content: '\e98b';
   /* color: green; */
 }
+
+.normal {
+  width: 200rpx;
+  height: 100rpx;
+  background-color: red;
+}
+
+.hover {
+  background-color: green;
+}
+
+.child {
+  background-color: blue;
+}

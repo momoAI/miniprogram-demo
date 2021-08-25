@@ -4,3 +4,10 @@
 <text>pages/icons/icon.wxml</text>
 
 <icon class="iconfont icon-yes"></icon>
+
+<view class="normal" hover-class="hover" bindtap="ontap" id="present">
+present
+<view hover-class="child" hover-stop-propagation hover-start-time="1" hover-stay-time="300" catchtap="ontap" id="child">
+child
+</view>
+</view>

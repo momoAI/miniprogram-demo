@@ -62,5 +62,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  ontap: function(e) {
+    console.log(e.target)
   }
 })
