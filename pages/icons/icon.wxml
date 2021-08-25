@@ -1,0 +1,6 @@
+<!--pages/icons/icon.wxml-->
+
+
+<text>pages/icons/icon.wxml</text>
+
+<icon class="iconfont icon-yes"></icon>

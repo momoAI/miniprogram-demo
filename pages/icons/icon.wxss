@@ -1,0 +1,22 @@
+/* pages/icons/icon.wxss */
+
+@font-face {
+  font-family: 'iconfont';  /* Project id 2532299 */
+  src: url('//at.alicdn.com/t/font_2532299_0wwq7ksp99kf.eot?t=1629384118577'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2532299_0wwq7ksp99kf.eot?t=1629384118577#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//at.alicdn.com/t/font_2532299_0wwq7ksp99kf.woff2?t=1629384118577') format('woff2'),
+       url('//at.alicdn.com/t/font_2532299_0wwq7ksp99kf.woff?t=1629384118577') format('woff'),
+       url('//at.alicdn.com/t/font_2532299_0wwq7ksp99kf.ttf?t=1629384118577') format('truetype'),
+       url('//at.alicdn.com/t/font_2532299_0wwq7ksp99kf.svg?t=1629384118577#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: 'iconfont'; 
+  /* color: red; */
+  font-size: 40px;
+}
+
+.icon-yes::before {
+  content: '\e98b';
+  /* color: green; */
+}

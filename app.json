@@ -1,24 +1,21 @@
 {
-  "pages":[
+  "pages": [
+    "pages/icons/icon",
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#f3a",
     "navigationBarTitleText": "Hello",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "backgroundColorTop": "#3f3",
-    "enablePullDownRefresh":true
+    "enablePullDownRefresh": true
   },
   "style": "v2",
-  "plugins": {
-    
-  },
+  "plugins": {},
   "darkmode": true,
-  "networkTimeout": {
-
-  },
+  "networkTimeout": {},
   "sitemapLocation": "sitemap.json",
   "debug": true,
   "usingComponents": {},
