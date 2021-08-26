@@ -5,9 +5,26 @@
 
 <icon class="iconfont icon-yes"></icon>
 
+<!-- 事件冒泡 -->
 <view class="normal" hover-class="hover" bindtap="ontap" id="present">
-present
-<view hover-class="child" hover-stop-propagation hover-start-time="1" hover-stay-time="300" catchtap="ontap" id="child">
-child
+  present
+  <view hover-class="child" hover-stop-propagation hover-start-time="1" hover-stay-time="300" catchtap="ontap"
+    id="child">
+    child
+  </view>
 </view>
-</view>
+
+<label>area == view</label>
+<movable-area class="movarea max">
+  <movable-view class="movview max"></movable-view>
+</movable-area>
+
+<label>area > view</label>
+<movable-area class="movarea max">
+  <movable-view class="movview min" direction="all"></movable-view>
+</movable-area>
+
+<label>area 《 view</label>
+<movable-area class="movarea min">
+  <movable-view class="movview max" direction="all"></movable-view>
+</movable-area>
