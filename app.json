@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/picks/pick",
     "pages/position/position",
     "pages/icons/icon",
     "pages/index/index",

@@ -1,0 +1,44 @@
+<!--pages/picks/pick.wxml-->
+
+<view>日期选择器</view>
+<!-- <picker mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view>
+      当前选择：{{array[index]}}
+    </view>
+</picker> -->
+
+<picker mode="selector" bindchange="bindPickerChange" value="{{index}}" range-key="name" range="{{objectArray}}">
+    <view>
+      当前选择：{{objectArray[index].name}}
+    </view>
+</picker>
+
+
+<view>多列选择器</view>
+<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view>
+      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    </view>
+</picker>
+
+
+<view>日期选择器</view>
+<picker mode="date" bindchange="bindDateChange" value="{{date}}" start="2015-07-01" end="2019-01-01">
+    <view>
+      当前选择：{{date}}
+    </view>
+</picker>
+
+<view>时间选择器</view>
+<picker mode="time" bindchange="bindTimeChange" value="{{time}}" start="09:00" end="20:00">
+    <view>
+      当前选择：{{time}}
+    </view>
+</picker>
+
+<view>省市区选择器</view>
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view>
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+</picker>
