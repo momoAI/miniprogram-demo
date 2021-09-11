@@ -97,6 +97,29 @@ Page({
     value: [9999, 1, 1],
     isDaytime: true,
   },
+  requestone: function(e) {
+    var requestTask = wx.request({
+      url: 'https://www.baidu.com',
+      success(res) {
+        console.log('res', res)
+      },
+      fail(err) {
+        if (/request:fail/.test(err.errMsg)) {
+          console.log('error', err)
+        }
+      },
+      complete(res) {
+        console.log('complete', res)
+      },
+    })
+  
+    const onheaderResponse = (headers) => {
+      console.log('onresponse')
+      requestTask.offHeadersReceived(onheaderResponse)
+      requestTask.abort()
+    }
+    requestTask.onHeadersReceived(onheaderResponse)
+  },
   bindPickerChange: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({

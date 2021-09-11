@@ -1,5 +1,10 @@
 <!--pages/picks/pick.wxml-->
 
+<button type="primary" bindtap="requestone">
+  网络请求
+</button>
+
+
 <view>日期选择器</view>
 <!-- <picker mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view>
@@ -58,10 +63,10 @@
       </picker-view-column>
       <picker-view-column>
         <view class="icon-container">
-          <image class="picker-icon" src="../lib/daytime.png" />
+          <!-- <image class="picker-icon" src="../lib/daytime.png" /> -->
         </view>
         <view class="icon-container">
-          <image class="picker-icon" src="../lib/night.png" />
+          <!-- <image class="picker-icon" src="../lib/night.png" /> -->
         </view>
       </picker-view-column>
     </picker-view>
