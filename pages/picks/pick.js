@@ -98,6 +98,30 @@ Page({
     isDaytime: true,
   },
   requestone: function(e) {
+    const app = getApp()
+    let p1 = app.wxp.request({url: 'https://www.baidu.com'}).catch(console.log('p1error'))
+    let p2 = app.wxp.request({url: 'https://www.baidu1.com'}).catch(console.log('p2error'))
+    let p3 = app.wxp.request({url: 'https://www.baidu2.com'}).catch(console.log('p3error'))
+    Promise.any([p1,p2,p3]).then((res) => {
+      console.log('sucess1:',res)
+    },err=>{
+      console.log('error1:',err)
+    })
+    function func1() {
+      return new Promise((resolve,reject) => {
+        setTimeout(() => {
+          // resolve('success')
+          reject('error')
+        }, 100);
+      })
+    }
+    let promise1 = func1()
+    promise1.then((res) => {
+      console.log(res)
+    },(err) => {
+      console.log('error:',err)
+    })
+
     var requestTask = wx.request({
       url: 'https://www.baidu.com',
       success(res) {

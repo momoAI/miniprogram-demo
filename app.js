@@ -1,5 +1,11 @@
 // app.js
+
+import { promisifyAll } from "miniprogram-api-promise";
+const wxp = {}
+promisifyAll(wx,wxp)
+
 App({
+  wxp: wxp,
   onLaunch() {
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
